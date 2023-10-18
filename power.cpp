@@ -1,7 +1,7 @@
 /**
  * file: power.cpp
  * type: C++ (source file)
- * date: 29_JUNE_2023
+ * date: 18_OCTOBER_2023
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
@@ -82,10 +82,7 @@ int main()
         file << "\n\nEnter a real number value for base which is no larger than ";
         file << MAXIMUM_ABSOLUTE_VALUE_BASE;
         file << " and no smaller than ";
-        file << (-1 * MAXIMUM_ABSOLUTE_VALUE_BASE) << ": ";
-
-        // Scan the command line terminal for the most recent user input entered via keyboard to store in the variable named base.
-        std::cin >> base;
+        file << (-1 * MAXIMUM_ABSOLUTE_VALUE_BASE) <> base;
 
         // Print the most recently input keyboard value to the command line terminal.
         std::cout << base;
@@ -103,10 +100,7 @@ int main()
         file << "\n\nEnter a real number value for exponent which is no larger than ";
         file << MAXIMUM_ABSOLUTE_VALUE_EXPONENT;
         file << " and no smaller than ";
-        file << (-1 * MAXIMUM_ABSOLUTE_VALUE_EXPONENT) << ": ";
-
-        // Scan the command line terminal for the most recent user input entered via keyboard to store in the variable named exponent.
-        std::cin >> exponent;
+        file << (-1 * MAXIMUM_ABSOLUTE_VALUE_EXPONENT) <> exponent;
 
         // Print the most recently input keyboard value to the command line terminal.
         std::cout << exponent;
@@ -115,7 +109,7 @@ int main()
         file << exponent;
 
         // If base is not within the range of accepted values, set base to 1.
-        if ((base < (-1 * MAXIMUM_ABSOLUTE_VALUE_BASE)) || (base > MAXIMUM_ABSOLUTE_VALUE_BASE)) 
+        if ((base  MAXIMUM_ABSOLUTE_VALUE_BASE)) 
         {
             base = 1;
             std::cout << "\n\nBecause the input value for base was not within the range of accepted values, base was set to the default value of 1.";
@@ -123,7 +117,7 @@ int main()
         }
 
         // If exponent is not within the range of accepted values, set exponent to 0.
-        if ((exponent < (-1 * MAXIMUM_ABSOLUTE_VALUE_EXPONENT)) || (exponent > MAXIMUM_ABSOLUTE_VALUE_EXPONENT)) 
+        if ((exponent  MAXIMUM_ABSOLUTE_VALUE_EXPONENT)) 
         {
             exponent = 0;
             std::cout << "\n\nBecause the input value for exponent was not within the range of accepted values, exponent was set to the default value of 0.";
@@ -140,10 +134,7 @@ int main()
         file << "\n\nresult = power(base,exponent) = power(" << base << ", " << exponent << ") = " << base << " ^ " << exponent << " = " << result << ".";
 
         // Ask the user whether or not to continue inputing values.
-        std::cout << "\n\nWould you like to continue inputing program values? (Enter 1 if YES. Enter 0 if NO): ";
-
-        // Scan the command line terminal for the most recent user input entered via keyboard to store in the variable named input_additional_values.
-        std::cin >> input_additional_values;
+        std::cout <> input_additional_values;
     }
 
     // Print a closing message to the command line terminal.
@@ -207,7 +198,7 @@ double power_of_e_to_x(double x) {
 // ln.c
 //
 // simple, fast, accurate natural log approximation
-// when without < math.h >
+// when without 
 
 // featuring * floating point bit level hacking,
 //           * x=m*2^p => ln(x)=ln(m)+ln(2)p,
@@ -250,7 +241,7 @@ float ln(float x) {
  * used by the cmath exp() function is
  * (approximately) Euler's Number.
  * 
- * Hence, exp(x) is approcimately 
+ * Hence, exp(x) is approximately 
  * x ^ e (where e is approximately Euler's Number).
  * 
  * Note that any number, x, raised to the power of 0 is 1.
@@ -276,10 +267,7 @@ double power(double base, double exponent)
     double output = 1.0;
     if (exponent == 0) return 1; 
     if (exponent == 1) return base;
-    // if ((base == 0) && (exponent < 0)) return -666; // Technically 0 raised to the power of some negative exponent is undefined (i.e. not a number).
-    if (is_whole_number(exponent))
-    {
-        if (exponent > 0)
+    // if ((base == 0) && (exponent  0)
         {
             while (exponent > 0) 
             {
