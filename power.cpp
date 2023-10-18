@@ -192,7 +192,7 @@ double power_of_e_to_x(double x) {
 //-----------------------------------------------------------------------------------------------
 // The following function and associated comments were not written by karbytes. 
 //
-// The followng function is essentially identical to the C++ library math.h function log().
+// The following function is essentially identical to the C++ library math.h function log().
 //-----------------------------------------------------------------------------------------------
 
 // ln.c
