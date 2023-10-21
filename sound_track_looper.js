@@ -2,7 +2,7 @@
  * file: sound_track_looper.js
  * type: JavaScript
  * author: karbytes
- * date: 17_OCTOBER_2023
+ * date: 20_OCTOBER_2023
  * license: PUBLIC_DOMAIN
  */
 
@@ -34,6 +34,7 @@ function get_menu_options() {
 	HTML_string += ('<' + 'option value="karbytes_guitar_13_may_2023.mp3"' + '>' + 'karbytes_guitar_13_may_2023.mp3' + '<' + '/' + 'option' + '>');
 	HTML_string += ('<' + 'option value="karbytes_guitar_07_june_2023.mp3"' + '>' + 'karbytes_guitar_07_june_2023.mp3' + '<' + '/' + 'option' + '>');
 	HTML_string += ('<' + 'option value="karbytes_guitar_16_october_2023.mp3"' + '>' + 'karbytes_guitar_16_october_2023.mp3' + '<' + '/' + 'option' + '>');
+	HTML_string += ('<' + 'option value="karbytes_drums_20_october_2023.mp3"' + '>' + 'karbytes_drums_20_october_2023.mp3' + '<' + '/' + 'option' + '>');
 	return HTML_string;
 }
 
